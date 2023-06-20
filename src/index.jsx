@@ -4,27 +4,20 @@ import './index.css';
 import App from './App';
 import Ephrim from './Ephrim.js';
 import Football from './Football';
+import Bee from './Bee';
+import Car from './Sure';
 import reportWebVitals from './reportWebVitals';
 
-// const toyota = {
-//     brand: 'Toyota',
-//     color: 'Yellow'
-// }
-// //let mainCalc = `<h1>I want to use JSX ${13 + 3} </h1>`;
-// function Car(props){
-//     return <h2>I am a {props.maker}!, i am {props.appearance} in color</h2>
-// }
-
-// function Garage(){
-//     return <>
-//         <Car maker= {toyota.brand} appearance={toyota.color}/>
-//         <h2>I live in my garage</h2>
-//     </>
-// }
+const myCar = {
+    brand: 'Toyota',
+    color: 'Yellow',
+    year: 2017,
+}
 
 // importing elements from HTML
 const calc = ReactDOM.createRoot(document.getElementById('calc'));
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const ben = ReactDOM.createRoot(document.getElementById('ben'));
 
 // displaying to root element div
  root.render(
@@ -36,7 +29,18 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 
 // Displaying to calc element div
-calc.render(<Football />)
+calc.render(
+    <>
+    <Football />
+    <Bee />
+</>)
+
+ben.render(
+            <Car 
+                maker= {myCar.brand} 
+                appearance={myCar.color} 
+                year= {myCar.year}
+            />);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
