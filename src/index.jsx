@@ -6,6 +6,8 @@ import Ephrim from './Ephrim.js';
 import Football from './Football';
 import Bee from './Bee';
 import Car from './Sure';
+import Garage from './Double';
+import MyForm from './MyForm';
 import reportWebVitals from './reportWebVitals';
 
 const myCar = {
@@ -33,14 +35,21 @@ calc.render(
     <>
     <Football />
     <Bee />
+    <MyForm />
 </>)
 
 ben.render(
+    <React.StrictMode>
             <Car 
                 maker= {myCar.brand} 
                 appearance={myCar.color} 
                 year= {myCar.year}
-            />);
+            />
+
+            <Garage />
+
+    </React.StrictMode>
+            );
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
