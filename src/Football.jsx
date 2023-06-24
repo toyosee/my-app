@@ -7,4 +7,6 @@ function Football(){
     return (<button onClick={() => shoot("Goal!")}>Take the shot</button>)
 }
 
+//IF - return,  &&, loggedIN ? <Profile />  : "Not found"
+
 export default Football;

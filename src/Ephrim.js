@@ -1,12 +1,11 @@
-import './App.css';
+import React, { Component } from 'react'
 
-function Ephrim(){
-    return(
-        <div className='App'>
-            <h1>I am Ephrim</h1>
-            <button>Ephrim</button>
-        </div>
-    );
+export class Ephrim extends Component {
+  render() {
+    return (
+      <div>Ephrim</div>
+    )
+  }
 }
 
-export default Ephrim;
+export default Ephrim
